@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Aetna_BetaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Aetna_Beta.dbo.BESystemColors' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="BESystemColors">
+          <Key>
+            <PropertyRef Name="SysRptGrandTotColor" />
+          </Key>
+          <Property Name="SysButtonBG" Type="varchar" MaxLength="20" />
+          <Property Name="SysButtonRollOv" Type="varchar" MaxLength="20" />
+          <Property Name="SysBGColor" Type="varchar" MaxLength="20" />
+          <Property Name="HolidayBGColor" Type="varchar" MaxLength="20" />
+          <Property Name="SysRptBGBarColor" Type="varchar" MaxLength="20" />
+          <Property Name="SysRptGrandTotColor" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="SysRptSubTotColor" Type="varchar" MaxLength="20" />
+          <Property Name="SysFormHeadBGColor" Type="varchar" MaxLength="20" />
+          <Property Name="SysMenuColor" Type="varchar" MaxLength="20" />
+          <Property Name="SysRollOverColor" Type="varchar" MaxLength="20" />
+          <Property Name="SysAgendaHdrColor" Type="varchar" MaxLength="20" />
+          <Property Name="SysTabBGColor" Type="varchar" MaxLength="20" />
+          <Property Name="TentativeColor" Type="varchar" MaxLength="20" />
+          <Property Name="SpeakerInvitedColor" Type="varchar" MaxLength="20" />
+          <Property Name="ConfirmedColor" Type="varchar" MaxLength="20" />
+          <Property Name="SpeakerDeclinedColor" Type="varchar" MaxLength="20" />
+          <Property Name="CancelledColor" Type="varchar" MaxLength="20" />
+          <Property Name="SysChartSeries1" Type="varchar" MaxLength="20" />
+          <Property Name="SysChartSeries2" Type="varchar" MaxLength="20" />
+          <Property Name="SysChartSeries3" Type="varchar" MaxLength="20" />
+          <Property Name="SysChartBGColor" Type="varchar" MaxLength="20" />
+          <Property Name="SysChartFontColor" Type="varchar" MaxLength="20" />
+          <Property Name="SysGradientStart" Type="varchar" MaxLength="20" />
+          <Property Name="SysGradientEnd" Type="varchar" MaxLength="20" />
+          <Property Name="MenuBar" Type="nchar" MaxLength="20" />
+          <Property Name="MenuBarFont" Type="nchar" MaxLength="20" />
+          <Property Name="MenuDDBackground" Type="nchar" MaxLength="20" />
+          <Property Name="DashboardBackground" Type="nchar" MaxLength="20" />
+        </EntityType>
+        <EntityContainer Name="Aetna_BetaModelStoreContainer">
+          <EntitySet Name="BESystemColors" EntityType="Self.BESystemColors" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [BESystemColors].[SysButtonBG] AS [SysButtonBG], 
+    [BESystemColors].[SysButtonRollOv] AS [SysButtonRollOv], 
+    [BESystemColors].[SysBGColor] AS [SysBGColor], 
+    [BESystemColors].[HolidayBGColor] AS [HolidayBGColor], 
+    [BESystemColors].[SysRptBGBarColor] AS [SysRptBGBarColor], 
+    [BESystemColors].[SysRptGrandTotColor] AS [SysRptGrandTotColor], 
+    [BESystemColors].[SysRptSubTotColor] AS [SysRptSubTotColor], 
+    [BESystemColors].[SysFormHeadBGColor] AS [SysFormHeadBGColor], 
+    [BESystemColors].[SysMenuColor] AS [SysMenuColor], 
+    [BESystemColors].[SysRollOverColor] AS [SysRollOverColor], 
+    [BESystemColors].[SysAgendaHdrColor] AS [SysAgendaHdrColor], 
+    [BESystemColors].[SysTabBGColor] AS [SysTabBGColor], 
+    [BESystemColors].[TentativeColor] AS [TentativeColor], 
+    [BESystemColors].[SpeakerInvitedColor] AS [SpeakerInvitedColor], 
+    [BESystemColors].[ConfirmedColor] AS [ConfirmedColor], 
+    [BESystemColors].[SpeakerDeclinedColor] AS [SpeakerDeclinedColor], 
+    [BESystemColors].[CancelledColor] AS [CancelledColor], 
+    [BESystemColors].[SysChartSeries1] AS [SysChartSeries1], 
+    [BESystemColors].[SysChartSeries2] AS [SysChartSeries2], 
+    [BESystemColors].[SysChartSeries3] AS [SysChartSeries3], 
+    [BESystemColors].[SysChartBGColor] AS [SysChartBGColor], 
+    [BESystemColors].[SysChartFontColor] AS [SysChartFontColor], 
+    [BESystemColors].[SysGradientStart] AS [SysGradientStart], 
+    [BESystemColors].[SysGradientEnd] AS [SysGradientEnd], 
+    [BESystemColors].[MenuBar] AS [MenuBar], 
+    [BESystemColors].[MenuBarFont] AS [MenuBarFont], 
+    [BESystemColors].[MenuDDBackground] AS [MenuDDBackground], 
+    [BESystemColors].[DashboardBackground] AS [DashboardBackground]
+    FROM [dbo].[BESystemColors] AS [BESystemColors]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Aetna_BetaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="BESystemColors">
+          <Key>
+            <PropertyRef Name="SysRptGrandTotColor" />
+          </Key>
+          <Property Name="SysButtonBG" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="SysButtonRollOv" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="SysBGColor" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="HolidayBGColor" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="SysRptBGBarColor" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="SysRptGrandTotColor" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SysRptSubTotColor" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="SysFormHeadBGColor" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="SysMenuColor" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="SysRollOverColor" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="SysAgendaHdrColor" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="SysTabBGColor" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="TentativeColor" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="SpeakerInvitedColor" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="ConfirmedColor" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="SpeakerDeclinedColor" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="CancelledColor" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="SysChartSeries1" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="SysChartSeries2" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="SysChartSeries3" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="SysChartBGColor" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="SysChartFontColor" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="SysGradientStart" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="SysGradientEnd" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="MenuBar" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="MenuBarFont" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="MenuDDBackground" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="DashboardBackground" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="Aetna_BetaEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="BESystemColors" EntityType="Self.BESystemColors" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Aetna_BetaModelStoreContainer" CdmEntityContainer="Aetna_BetaEntities">
+          <EntitySetMapping Name="BESystemColors">
+            <EntityTypeMapping TypeName="Aetna_BetaModel.BESystemColors">
+              <MappingFragment StoreEntitySet="BESystemColors">
+                <ScalarProperty Name="SysButtonBG" ColumnName="SysButtonBG" />
+                <ScalarProperty Name="SysButtonRollOv" ColumnName="SysButtonRollOv" />
+                <ScalarProperty Name="SysBGColor" ColumnName="SysBGColor" />
+                <ScalarProperty Name="HolidayBGColor" ColumnName="HolidayBGColor" />
+                <ScalarProperty Name="SysRptBGBarColor" ColumnName="SysRptBGBarColor" />
+                <ScalarProperty Name="SysRptGrandTotColor" ColumnName="SysRptGrandTotColor" />
+                <ScalarProperty Name="SysRptSubTotColor" ColumnName="SysRptSubTotColor" />
+                <ScalarProperty Name="SysFormHeadBGColor" ColumnName="SysFormHeadBGColor" />
+                <ScalarProperty Name="SysMenuColor" ColumnName="SysMenuColor" />
+                <ScalarProperty Name="SysRollOverColor" ColumnName="SysRollOverColor" />
+                <ScalarProperty Name="SysAgendaHdrColor" ColumnName="SysAgendaHdrColor" />
+                <ScalarProperty Name="SysTabBGColor" ColumnName="SysTabBGColor" />
+                <ScalarProperty Name="TentativeColor" ColumnName="TentativeColor" />
+                <ScalarProperty Name="SpeakerInvitedColor" ColumnName="SpeakerInvitedColor" />
+                <ScalarProperty Name="ConfirmedColor" ColumnName="ConfirmedColor" />
+                <ScalarProperty Name="SpeakerDeclinedColor" ColumnName="SpeakerDeclinedColor" />
+                <ScalarProperty Name="CancelledColor" ColumnName="CancelledColor" />
+                <ScalarProperty Name="SysChartSeries1" ColumnName="SysChartSeries1" />
+                <ScalarProperty Name="SysChartSeries2" ColumnName="SysChartSeries2" />
+                <ScalarProperty Name="SysChartSeries3" ColumnName="SysChartSeries3" />
+                <ScalarProperty Name="SysChartBGColor" ColumnName="SysChartBGColor" />
+                <ScalarProperty Name="SysChartFontColor" ColumnName="SysChartFontColor" />
+                <ScalarProperty Name="SysGradientStart" ColumnName="SysGradientStart" />
+                <ScalarProperty Name="SysGradientEnd" ColumnName="SysGradientEnd" />
+                <ScalarProperty Name="MenuBar" ColumnName="MenuBar" />
+                <ScalarProperty Name="MenuBarFont" ColumnName="MenuBarFont" />
+                <ScalarProperty Name="MenuDDBackground" ColumnName="MenuDDBackground" />
+                <ScalarProperty Name="DashboardBackground" ColumnName="DashboardBackground" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
